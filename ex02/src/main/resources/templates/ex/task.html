@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <style>
+        input {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form th:action="@{/ex/task}" method="post" th:object="${task}">
+        <input type="text" th:field="*{num}" placeholder="학생 번호">
+        <input type="text" th:field="*{kor}" placeholder="국어 점수">
+        <input type="text" th:field="*{eng}" placeholder="영어 점수">
+        <input type="text" th:field="*{math}" placeholder="수학 점수">
+        <input type="submit" value="등록">
+    </form>
+</body>
+</html>
