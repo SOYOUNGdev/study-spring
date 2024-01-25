@@ -121,14 +121,16 @@ IntelliJ 설치 - 2020.01.01
 
  Spring MVC(Front-Controller-Pattern)
  =
+ ```
 
-			HandlerMaping
-REQUEST	  ①	      ②↕	    		③		        ④
-		] ↔	DispatcherServlet   ↔  HandlerAdapter   ↔  Controller
-RESPONSE  	 ⑦	 ⑥↕	 ⑤↕
+			HandlerMapping
+REQUEST	  	  ①	      ②↕	       	   ③		    ④
+		] ↔	DispatcherServlet   ↔  HandlerAdapter   ↔  Controller  
+RESPONSE  	  ⑦	 ⑥↕	 ⑤↕
 		View	ViewResolver
-		  ↕
+		  ↕ 
 		HTML 및 기타
+```
 
 *특징
 =
